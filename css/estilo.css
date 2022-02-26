@@ -66,6 +66,42 @@ ul
     float: left;
 }
 
+@keyframes animacionImg
+{
+    0% 
+    {
+        transform: translateY(-50px) ;
+    }
+
+    25% 
+    {
+        transform: translateX(50px) ;
+    }
+
+    50% 
+    {
+        transform: scale(2,2)
+    }
+
+    75% 
+    {
+        transform: skew(20deg, 20deg)
+    }
+
+    75% 
+    {
+        transform: translateX(0px)
+    }
+}
+
+.animacion
+{
+    animation-name: animacionImg;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+}
+
 .positionone
 {
     padding: 0px 0px 0px 300px;
@@ -89,7 +125,15 @@ header nav ul .navmenu
     display: inline;
     padding: 40px 40px 0px 0px;
     height: 100px;
+    transition: 1s;
 }
+
+.navmenu:hover 
+{
+    height: 200px;
+}
+
+
 
 /* Estilos de Main*/
 
@@ -242,9 +286,3 @@ footer
 {
     
 }
-
-
-
-
-
-
